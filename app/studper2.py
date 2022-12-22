@@ -32,6 +32,7 @@ else:
     y ='count()',
     tooltip = ['reading score','count()','parental level of education']
 ).interactive()
+
 st.altair_chart(pl)
 
  
