@@ -1,5 +1,14 @@
 import streamlit as st
 import pandas as pd
+from streamlit_option_menu import option_menu
+
+import requests
+@st.cache
+def read_file_from_url(url):
+  return requests.get(url).content
+
+  
+ 
 
 st.title('Students Performance in Exams Application')
 st.markdown("""
